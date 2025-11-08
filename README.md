@@ -1,4 +1,4 @@
-# 🛍️ ECommerce Refactored
+# 🛍️ E-Commerce Legacy Code Refactoring & Security Audit
 
 A clean, modern, and scalable **E-Commerce Web Application** built with **CodeIgniter 4**.  
 This project showcases a refactored architecture suitable for modern PHP development, maintainability, testability, and future growth.
