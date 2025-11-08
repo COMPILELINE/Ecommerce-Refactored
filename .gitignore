@@ -1,0 +1,70 @@
+# -------------------------------
+# Core
+# -------------------------------
+/vendor/
+/public/uploads/
+/writable/*
+!/writable/.gitkeep
+
+# -------------------------------
+# Environment & Secrets
+# -------------------------------
+.env
+.env.*.local
+*.env.backup
+
+# IDE / Editor Files
+# -------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS Files
+# -------------------------------
+.DS_Store
+Thumbs.db
+
+# Logs & Cache
+# -------------------------------
+*.log
+php_errors.log
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/debugbar/*
+!writable/cache/index.html
+!writable/logs/index.html
+!writable/session/index.html
+
+# Composer
+# -------------------------------
+composer.lock
+
+# PHPUnit / Testing
+# -------------------------------
+.phpunit.cache
+coverage/
+clover.xml
+
+# Node / Frontend (if used later)
+# -------------------------------
+node_modules/
+dist/
+build/
+
+# CI/CD Artifacts
+# -------------------------------
+.php-cs-fixer.cache
+phpstan-result.xml
+
+# Temporary Files
+# -------------------------------
+*.bak
+*.tmp
+*.old
+
+# Security
+# -------------------------------
+/deploy/*.key
+/secrets/

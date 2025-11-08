@@ -1,0 +1,25 @@
+{
+  "name": "acme/ecommerce-ci4",
+  "description": "Basic functional CodeIgniter 4 e-commerce (DDD)",
+  "type": "project",
+  "require": {
+    "php": "^8.1",
+    "codeigniter4/framework": "^4.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "App\\Domain\\": "app/Domain/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@php spark migrate --all --ansi",
+      "@php spark db:seed UserSeeder",
+      "@php spark db:seed ProductSeeder"
+    ],
+    "post-update-cmd": [
+      "@php spark migrate --all --ansi"
+    ]
+  }
+}
